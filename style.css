@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "sinkin_sans400_regular";
+  src: url("SinkinSans-400Regular-webfont.eot");
+  src: url("SinkinSans-400Regular-webfont.eot?#iefix") format("embedded-opentype"), url("SinkinSans-400Regular-webfont.woff2") format("woff2"), url("SinkinSans-400Regular-webfont.woff") format("woff"), url("SinkinSans-400Regular-webfont.ttf") format("truetype"), url("SinkinSans-400Regular-webfont.svg#sinkin_sans400_regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  color: #eeee09;
+  background: #4ce498;
+  text-align: center;
+}
+
+em {
+  width: 150px;
+  color: #eeee09;
+  background: #4ce498;
+}
+
+a {
+  text-decoration: none;
+}
+
+.element {
+  display: flex;
+}
+
+.text {
+  width: 500px;
+}
+
+.box {
+  position: relative;
+  border: 1px solid #f4f4f7;
+  width: 300px;
+  height: 300px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.box--1 {
+  text-align: center;
+  background-color: #eeb7e7;
+  padding-top: 15%;
+}
+
+.box--2 {
+  text-align: center;
+  padding-top: 15%;
+  background: #f5efe7;
+}
+
+.box--3 {
+  text-align: center;
+  background: #d4d4f0;
+  padding-top: 15%;
+}
+
+.box--4 {
+  text-align: center;
+  background: #f5efe7;
+  padding-top: 15%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4ce498;
+}
+
+h3 {
+  color: #eeee09;
+  background: #4ce498;
+  text-align: center;
+}
+
+.mentions, .contact {
+  text-decoration: #eeee09;
+}
+
+/*# sourceMappingURL=style.css.map */
