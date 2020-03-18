@@ -148,81 +148,49 @@ h6 {
 
 .container {
   display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: auto;
   flex-wrap: wrap;
-  justify-content: space-between;
+  background-color: #fff;
 }
 
-a {
-  text-decoration: none;
-}
-
-.box--1 {
-  border: 1px solid #d4d4f0;
-  font-size: 3.5rem;
-  text-align: center;
-  width: 400px;
+.box--1, .box--2, .box--3, .box--4 {
   height: 400px;
-  padding-top: 20%;
-  background: #eeb7e7;
+  width: 100%;
+  max-width: 400px;
+  margin: 15px;
+  padding: 15px;
+  font-size: 3.5em;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
-  margin: 3%;
+  text-align: center;
 }
-.box--1:hover {
+.box--1:hover, .box--2:hover, .box--3:hover, .box--4:hover {
   transform: scale(1.2);
   transition: transform 330ms ease-in-out;
 }
 
+.box--1 {
+  background: #eeb7e7;
+}
+
 .box--2 {
-  border: 1px solid #f4f4f7;
-  font-size: 3.5rem;
-  text-align: center;
-  width: 400px;
-  height: 400px;
-  padding-top: 20%;
   background: #f5efe7;
   background: linear-gradient(red, blue);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
-  margin: 3%;
-}
-.box--2:hover {
-  transform: scale(1.2);
-  transition: transform 330ms ease-in-out;
 }
 
 .box--3 {
-  color: blue;
-  border: 1px solid #d4d4f0;
-  font-size: 3.5rem;
-  text-align: center;
-  width: 400px;
-  height: 400px;
-  padding-top: 20%;
   background: #d4d4f0;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
-  margin: 3%;
-}
-.box--3:hover {
-  transform: scale(1.2);
-  transition: transform 330ms ease-in-out;
 }
 
 .box--4 {
-  color: #56a808;
-  border: 1px solid #d4d4f0;
-  font-size: 3.5rem;
-  text-align: center;
-  width: 400px;
-  height: 400px;
-  padding-top: 20%;
   background: #f5efe7;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
-  margin: 3%;
 }
-.box--4:hover {
-  transform: scale(1.2);
-  transition: transform 330ms ease-in-out;
+
+a {
+  text-decoration: none;
 }
 
 .footer {
@@ -249,43 +217,70 @@ span {
 @media screen and (max-width: 900px) {
   body {
     margin: 0;
-    width: auto;
+    width: 100%;
     font-size: 1rem;
   }
 
+  .container {
+    display: block;
+  }
+
   .box--1, .box--2, .box--3, .box--4 {
-    width: 400px;
-    height: 150px;
+    width: auto;
+    max-height: 300px;
+    height: 100%;
     font-size: 2rem;
-    padding-top: 15px;
-    margin-bottom: 10%;
+    margin: 10px;
+    padding: 10px;
     text-align: center;
   }
   .box--1:hover, .box--2:hover, .box--3:hover, .box--4:hover {
     transform: scaleX(1.2);
     transition: transform 330ms ease-in-out;
   }
-  .box--1 .blocpage1, .box--1 .blocpage2, .box--1 .blocpage3, .box--1 .blocpage4, .box--1 .blocpage5, .box--2 .blocpage1, .box--2 .blocpage2, .box--2 .blocpage3, .box--2 .blocpage4, .box--2 .blocpage5, .box--3 .blocpage1, .box--3 .blocpage2, .box--3 .blocpage3, .box--3 .blocpage4, .box--3 .blocpage5, .box--4 .blocpage1, .box--4 .blocpage2, .box--4 .blocpage3, .box--4 .blocpage4, .box--4 .blocpage5 {
-    margin-left: 0;
+
+  .blocpage1, .blocpage2, .blocpage3, .blocpage4, .blocpage5 {
+    padding: 10px;
+    margin: 0;
     font-size: 0.8rem;
   }
-  .box--1 h2, .box--1 h3, .box--1 h4, .box--1 h5, .box--1 h6, .box--2 h2, .box--2 h3, .box--2 h4, .box--2 h5, .box--2 h6, .box--3 h2, .box--3 h3, .box--3 h4, .box--3 h5, .box--3 h6, .box--4 h2, .box--4 h3, .box--4 h4, .box--4 h5, .box--4 h6 {
+
+  h2, h3, h4, h5, h6 {
     width: auto;
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: center;
   }
-  .box--1 .text, .box--2 .text, .box--3 .text, .box--4 .text {
-    max-width: 250px;
-    margin: 0px;
+
+  .text {
+    width: 100%;
+    margin: 10px;
   }
-  .box--1 .prix, .box--2 .prix, .box--3 .prix, .box--4 .prix {
-    margin: 5px;
+
+  .prix {
+    margin: 10px;
   }
-  .box--1 .image, .box--2 .image, .box--3 .image, .box--4 .image {
+
+  img {
     display: none;
   }
-  .box--1 span, .box--2 span, .box--3 span, .box--4 span {
-    font-size: 0.9rem;
+
+  span {
+    padding: 0px;
+    font-size: 1rem;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  em {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  strong {
+    padding-left: 10px;
+    font-size: 1.5rem;
   }
 }
 
