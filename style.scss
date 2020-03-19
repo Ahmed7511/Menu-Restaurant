@@ -153,11 +153,19 @@ p
 .text 
 {
     width: 750px;
+<<<<<<< HEAD
     margin-bottom: 10px;
 }
 .prix
 {
     margin: 10px;
+=======
+    margin: 0px;
+}
+.prix
+{
+    margin:10px;
+>>>>>>> branchtest
 }
 
 .container
@@ -198,7 +206,11 @@ p
     background:$color-box3;
 }
 .box--4{
+<<<<<<< HEAD
     color: green ;
+=======
+    color: green;
+>>>>>>> branchtest
     background: $color-box4;
 }
 a
