@@ -1,17 +1,278 @@
-/* Error: expected "{".
- *     ,
- * 157 |     margin-bottom: 10px;
- *     |                        ^
- *     '
- *   ohmyfood\style.scss 157:24  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a     \2577 \a 157 \2502      margin-bottom: 10px;\d\a     \2502                         ^\a     \2575 \a   ohmyfood\\style.scss 157:24  root stylesheet';
+body {
+  font-family: "Bellota", cursive, serif;
+  font-size: 1.1rem;
+  width: 1100px;
+  margin: auto;
 }
+
+.blocpage1 {
+  padding: 80px;
+  background-color: #fcd5f5;
+  border: 1px solid #eeb7e7;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+.blocpage2 {
+  padding: 30px;
+  background: #fdf3ec;
+  border: 1px solid blanchedalmond;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+#menu2 {
+  margin: 15px;
+  background: linear-gradient(brown, blue);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.blocpage3 {
+  padding: 50px;
+  background: #eeeaee;
+  border: 1px solid #dadaec;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+.blocpage4 {
+  padding: 30px;
+  background: white;
+  border: 1px solid #ededf5;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+.blocpage5 {
+  border: 1px solid #d4d4f0;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+h1 {
+  color: #eeee09;
+  background: #0e5532;
+  text-align: center;
+  height: 100px;
+  font-size: 3rem;
+  font-weight: bolder;
+  padding-top: 20px;
+}
+
+em {
+  font-weight: bolder;
+  padding-left: 50px;
+  padding-right: 80px;
+}
+
+mark {
+  background: transparent;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.icon {
+  text-align: center;
+}
+
+i {
+  background: linear-gradient(90deg, #ef465f, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+strong {
+  font-size: 3rem;
+  padding-left: 200px;
+}
+
+h2 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 4rem;
+  text-align: center;
+  background: linear-gradient(brown, blue);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #eeee09;
+}
+
+h5 {
+  color: blue;
+  text-align: center;
+  font-size: 4rem;
+}
+
+h6 {
+  background: linear-gradient(#04e982, #09743e);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  font-size: 4rem;
+}
+
+p {
+  margin: 10px;
+}
+
+.btn {
+  color: #eeee09;
+  background: #0e5532;
+  width: 250px;
+  margin-left: 400px;
+  border: 1px solid #0e5532;
+  border-radius: 5% 5% 5% 5%;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.element {
+  display: flex;
+}
+
+.text {
+  width: 750px;
+  margin-bottom: 10px;
+}
+
+.prix {
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 100%;
+  max-width: 400px;
+  margin: 15px;
+  padding: 15px;
+  font-size: 3.5em;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.box:hover {
+  transform: scale(1.2);
+  transition: transform 330ms ease-in-out;
+}
+
+.box--1 {
+  color: black;
+  background: #eeb7e7;
+}
+
+.box--2 {
+  background: #f5efe7;
+  background: linear-gradient(brown, blue);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.box--3 {
+  color: blue;
+  background: #d4d4f0;
+}
+
+.box--4 {
+  color: green;
+  background: #f5efe7;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0e5532;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.mentions, .contact, .pageprincipale {
+  margin: 10px;
+}
+.mentions:hover, .contact:hover, .pageprincipale:hover {
+  transform: scale(1.1);
+  transition: transform 330ms ease-in-out;
+}
+
+span {
+  font-size: 1.8rem;
+  color: #eeee09;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0px;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .box {
+    width: auto;
+    font-size: 2rem;
+  }
+
+  .blocpage1, .blocpage2, .blocpage3, .blocpage4, .blocpage5 {
+    padding: 5px;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  h2, h3, h4, h5, h6 {
+    width: auto;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .text {
+    width: 100%;
+    margin: 5px;
+  }
+
+  .prix {
+    margin: 5px;
+  }
+
+  img {
+    display: none;
+  }
+
+  span {
+    padding: 0px;
+    font-size: 1rem;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  em {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  strong {
+    padding-left: 10px;
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
