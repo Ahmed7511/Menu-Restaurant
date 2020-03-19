@@ -14,7 +14,7 @@ body {
 }
 
 .blocpage2 {
-  padding: 50px;
+  padding: 30px;
   background: #fdf3ec;
   border: 1px solid blanchedalmond;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -62,8 +62,8 @@ h1 {
 }
 
 em {
-  font-weight: bold;
-  padding-left: 60px;
+  font-weight: bolder;
+  padding-left: 50px;
   padding-right: 80px;
 }
 
@@ -121,6 +121,10 @@ h6 {
   font-size: 4rem;
 }
 
+p {
+  margin: 10px;
+}
+
 .btn {
   color: #eeee09;
   background: #0e5532;
@@ -148,15 +152,13 @@ h6 {
 
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   max-width: 1000px;
   margin: auto;
   flex-wrap: wrap;
-  background-color: #fff;
 }
 
-.box--1, .box--2, .box--3, .box--4 {
-  height: 400px;
+.box {
   width: 100%;
   max-width: 400px;
   margin: 15px;
@@ -165,7 +167,7 @@ h6 {
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
-.box--1:hover, .box--2:hover, .box--3:hover, .box--4:hover {
+.box:hover {
   transform: scale(1.2);
   transition: transform 330ms ease-in-out;
 }
@@ -176,7 +178,7 @@ h6 {
 
 .box--2 {
   background: #f5efe7;
-  background: linear-gradient(red, blue);
+  background: linear-gradient(brown, blue);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -214,33 +216,20 @@ span {
   color: #eeee09;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
   body {
-    margin: 0;
+    margin: 0px;
     width: 100%;
     font-size: 1rem;
   }
 
-  .container {
-    display: block;
-  }
-
-  .box--1, .box--2, .box--3, .box--4 {
+  .box {
     width: auto;
-    max-height: 300px;
-    height: 100%;
     font-size: 2rem;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-  }
-  .box--1:hover, .box--2:hover, .box--3:hover, .box--4:hover {
-    transform: scaleX(1.2);
-    transition: transform 330ms ease-in-out;
   }
 
   .blocpage1, .blocpage2, .blocpage3, .blocpage4, .blocpage5 {
-    padding: 10px;
+    padding: 5px;
     margin: 0;
     font-size: 0.8rem;
   }
@@ -253,11 +242,11 @@ span {
 
   .text {
     width: 100%;
-    margin: 10px;
+    margin: 5px;
   }
 
   .prix {
-    margin: 10px;
+    margin: 5px;
   }
 
   img {

@@ -25,7 +25,7 @@ body
 
 .blocpage2
 {
-    padding: 50px;
+    padding: 30px;
     background: rgb(253, 243, 236);
     border: 1px solid blanchedalmond;
     box-shadow: 5px 5px 5px 5px rgb(0 ,0 ,0 ,0.3);
@@ -74,8 +74,8 @@ h1
 }
 em
 {
-   font-weight: bold;
-  padding-left: 60px;
+   font-weight: bolder;
+  padding-left: 50px;
   padding-right: 80px;  
 }
 mark
@@ -131,6 +131,10 @@ h6
     text-align: center;
     font-size: 4rem;
 }
+p
+{
+    margin: 10px;
+}
 .btn
 {
     color: $color-titre;
@@ -160,15 +164,12 @@ h6
 .container
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     max-width: 1000px;
     margin: auto;
     flex-wrap: wrap;
-    background-color:#fff;
 }
-
-.box--1, .box--2, .box--3, .box--4{
-    height: 400px;
+.box{
     width: 100%;
     max-width: 400px;
     margin: 15px;
@@ -176,19 +177,18 @@ h6
     font-size: 3.5em;
     box-shadow: $box-shadow;
     text-align: center;
-    &:hover{
+     &:hover{
         transform: scale(1.2);
         transition: transform 330ms ease-in-out;
     }   
 }
-
 .box--1 {
     background:$color-box1;
 }
 
 .box--2{
     background:  rgb(245, 239, 231);
-    background: linear-gradient( red , blue);
+    background: linear-gradient( brown , blue);
     -webkit-text-fill-color : transparent;
     -webkit-background-clip: text;
 }
@@ -225,30 +225,19 @@ span
     font-size: 1.8rem;
     color: $color-titre;
 }
-@media screen and(max-width:900px){
+@media screen and(max-width:768px){
     body{
-        margin:0;
+        margin: 0px;
         width: 100%;
         font-size: 1rem;
     }
-    .container{
-        display: block;
-    }
-    .box--1 ,.box--2,.box--3,.box--4{
-        width:auto;
-        max-height:300px ;
-        height: 100%;
+    .box
+    {
+        width: auto;
         font-size: 2rem;
-        margin: 10px;
-        padding: 10px;
-        text-align: center;
-        &:hover{
-            transform: scaleX(1.2);
-            transition: transform 330ms ease-in-out;
-        }
     }
     .blocpage1 , .blocpage2,.blocpage3,.blocpage4,.blocpage5{
-        padding: 10px;
+        padding: 5px;
            margin: 0;
         font-size: 0.8rem; 
            }
@@ -259,10 +248,10 @@ span
         }  
     .text{
            width: 100%;
-            margin: 10px;
+            margin: 5px;
         }
     .prix{
-            margin: 10px;
+            margin: 5px;
         }
     img
         {
