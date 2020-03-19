@@ -142,12 +142,11 @@ p {
 
 .text {
   width: 750px;
-  margin: 15px;
+  margin: 0px;
 }
 
 .prix {
-  margin-top: 15px;
-  margin-right: 20px;
+  margin: 10px;
 }
 
 .container {
@@ -173,6 +172,7 @@ p {
 }
 
 .box--1 {
+  color: black;
   background: #eeb7e7;
 }
 
@@ -184,10 +184,12 @@ p {
 }
 
 .box--3 {
+  color: blue;
   background: #d4d4f0;
 }
 
 .box--4 {
+  color: green;
   background: #f5efe7;
 }
 
