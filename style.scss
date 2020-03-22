@@ -72,6 +72,14 @@ h1
     font-weight: bolder;
     padding-top: 20px;
 }
+section h2 {
+    display: inline-block;
+    text-align: center;
+    color: #FDCB46;
+    font-size: 2.5vw;
+    margin: auto;
+    transform: scale(1.1);
+}
 em
 {
    font-weight: bolder;
@@ -135,17 +143,185 @@ p
 {
     margin: 10px;
 }
-.btn
-{
-    color: $color-titre;
-    background: $color-primary;
-    width: 250px;
-    margin-left: 400px;
-    border: 1px solid $color-primary;
-    border-radius: 5% 5% 5% 5%;
-    margin-bottom: 20px;
-    font-size: 2rem;
+.note1, .note2{
+    margin: 70px;
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+         &::before{
+            content:'';
+             position: absolute;
+             transform: scaleX(0);
+             width: 100%;
+             bottom: 0;
+             left: 0;
+             height: 2px;
+             background: black;
+             transform-origin: bottom right;
+             transition: transform 1000ms ease-in-out;
+    
+        }
+    }
+    .note1:hover::before{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+.note2:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
+.note3{
+    margin: 30px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+         &::before{
+            content:'';
+             position: absolute;
+             transform: scaleX(0);
+             width: 100%;
+             bottom: 0;
+             left: 0;
+             height: 2px;
+             background: black;
+             transform-origin: bottom right;
+             transition: transform 1000ms ease-in-out;
+    
+        }
+    }
+    .note3:hover::before{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+.chic1{
+    font-weight: bold;
+     &:hover {
+    border-bottom: 2px solid brown;
+     }
+}
+.chic2 {
+    margin: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+         &::before{
+            content:'';
+             position: absolute;
+             transform: scaleX(0);
+             width: 100%;
+             bottom: 0;
+             left: 0;
+             height: 2px;
+             background: blueviolet;
+             transform-origin: bottom right;
+             transition: transform 1000ms ease-in-out;
+    
+        }
+    }
+    .chic2:hover::before{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+.chic3{
+    margin: 30px;
+    color: blue;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+         &::before{
+            content:'';
+             position: absolute;
+             transform: scaleX(0);
+             width: 100%;
+             bottom: 0;
+             left: 0;
+             height: 2px;
+             background: blue;
+             transform-origin: bottom right;
+             transition: transform 1000ms ease-in-out;
+    
+        }
+    }
+    .chic3:hover::before{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+.delice1,.delice2,.delice3{
+        font-weight: bold;
+        display: inline-block;
+        position: relative;
+             &::before{
+                content:'';
+                 position: absolute;
+                 transform: scaleX(0);
+                 width: 100%;
+                 bottom: 0;
+                 left: 0;
+                 height: 2px;
+                 background: blue;
+                 transform-origin: bottom right;
+                 transition: transform 1000ms ease-in-out;
+        
+            }
+        }
+    
+        .delice1:hover::before{
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        
+    .delice2:hover::before{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    
+    .delice3:hover::before{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    .gout1{
+        margin: 40px;
+    }
+    .gout2{
+        margin: 10px;
+    }
+    .gout1,.gout2,.gout3{
+        font-weight: bold;
+        display: inline-block;
+        position: relative;
+             &::before{
+                content:'';
+                 position: absolute;
+                 transform: scaleX(0);
+                 width: 100%;
+                 bottom: 0;
+                 left: 0;
+                 height: 2px;
+                 background: greenyellow;
+                 transform-origin: bottom right;
+                 transition: transform 1000ms ease-in-out;
+        
+            }
+        }
+    
+        .gout1:hover::before{
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        
+    .gout2:hover::before{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    
+    .gout3:hover::before{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
 .element
 {
     display: flex;
@@ -213,18 +389,16 @@ a
     margin-bottom: 20px;
     
 } 
-.mentions , .contact , .pageprincipale
+.footer a
 {  
+    color: #FDCB46;
+    font-size: 1.8rem;
+    text-decoration: none;
     margin: 10px;
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.2);
         transition:transform 330ms ease-in-out;
     }
-}
-span
-{
-    font-size: 1.8rem;
-    color: $color-titre;
 }
 @media screen and(max-width:768px){
     body{
