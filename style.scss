@@ -32,12 +32,16 @@ body
     margin-bottom: 30px;
 }
 
-#menu2
+.menu1
 {
-    margin: 15px;
-    background: linear-gradient( brown, blue);
-    -webkit-text-fill-color : transparent;
-    -webkit-background-clip: text;
+    margin: 5px;
+    color: indianred;
+}
+.menu2 {
+    color: indigo;
+}
+.menu3{
+    color: blue;
 }
 .blocpage3
 {
@@ -72,26 +76,46 @@ h1
     font-weight: bolder;
     padding-top: 20px;
 }
-section h2 {
-    display: inline-block;
+
+
+.btn{
+    content: ".";
+    animation: btn 1.2s steps(5, end) infinite;
+}
+@keyframes btn {
+     20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+}
+40% {
+    color: #FFCA28;
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+}
+
+60% {
+    text-shadow: 0.25em 0 0 #FFCA28, 0.5em 0 0 rgba(0, 0, 0, 0);
+}
+100% {
+    text-shadow: 0.25em 0 0 #FFCA28, 0.5em 0 0 #FFCA28;
+}
+}
+.box--5{
     text-align: center;
-    color: #FDCB46;
-    font-size: 2.5vw;
     margin: auto;
-    transform: scale(1.1);
 }
-em
-{
-   font-weight: bolder;
-  padding-left: 50px;
-  padding-right: 80px;  
-}
-mark
-{
-    background: transparent;
-    font-size: 1.3rem;
-    font-weight: bolder;
-}
+    
+em {
+        color: $color-titre;
+        display: inline-block;
+        text-align: center;
+        color: $color-titre;
+        background: $color-primary;
+        font-size: 2rem;
+        border-radius: 5% 5% 5% 5%;
+        padding: 30px;
+        margin: 30px;
+    }
+
 .icon
 {
     text-align: center;
@@ -101,21 +125,15 @@ i {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-strong
-{
-    font-size: 3rem;
-    padding-left: 200px;
-}
-h2
-{
-    font-size: 3.5rem;
+h2{
     text-align: center;
+    font-size: 3.5rem;
 }
 h3
 {
     font-size: 4rem;
     text-align: center;
-    background: linear-gradient(brown , blue);
+    background: -webkit-linear-gradient(0deg, #cc6410 0% 30%, #a45be9, blue);
     -webkit-text-fill-color : transparent;
     -webkit-background-clip: text;
 }
@@ -145,6 +163,7 @@ p
 }
 .note1, .note2{
     margin: 70px;
+    font-weight: bold;
     font-size: 1.5rem;
     display: inline-block;
     position: relative;
@@ -197,11 +216,32 @@ p
 
 .chic1{
     font-weight: bold;
-     &:hover {
-    border-bottom: 2px solid brown;
-     }
-}
+    color: indianred;
+    font-size: 1.3rem;
+    display: inline-block;
+    position: relative;
+         &::before{
+            content:'';
+             position: absolute;
+             transform: scaleX(0);
+             width: 100%;
+             bottom: 0;
+             left: 0;
+             height: 2px;
+             background: indianred;
+             transform-origin: bottom right;
+             transition: transform 1000ms ease-in-out;
+    
+        }
+    }
+    .chic1:hover::before{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+
 .chic2 {
+    color: indigo;
     margin: 30px;
     font-size: 1.3rem;
     font-weight: bold;
@@ -227,8 +267,8 @@ p
     }
 
 .chic3{
-    margin: 30px;
     color: blue;
+    margin: 30px;
     font-weight: bold;
     display: inline-block;
     position: relative;
@@ -250,6 +290,12 @@ p
         transform: scaleX(1);
         transform-origin: bottom left;
     }
+ .delice2{
+     margin: 20px;
+ }   
+ .delice3{
+     margin: 30px;
+ }
 .delice1,.delice2,.delice3{
         font-weight: bold;
         display: inline-block;
@@ -376,6 +422,7 @@ p
     color: green;
     background: $color-box4;
 }
+
 a
 {
     text-decoration: none;
@@ -385,13 +432,12 @@ a
     display: flex;
     justify-content: space-between;
     background-color: $color-primary;
-    height: 70px;
     margin-bottom: 20px;
     
 } 
 .footer a
 {  
-    color: #FDCB46;
+    color: $color-titre;
     font-size: 1.8rem;
     text-decoration: none;
     margin: 10px;
@@ -432,20 +478,6 @@ a
         {
             display: none;
         } 
-     span{
-            padding: 0px;
-            font-size: 1rem;
-        }
-    .btn
-    {
-        display: none;
-    }
-    em{
-        font-size: 1rem;
-        font-weight: bold;
-    }
-    strong {
-        padding-left: 10px;
-        font-size: 1.5rem;
-    }
+   
+   
 }
