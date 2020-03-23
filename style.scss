@@ -16,7 +16,7 @@ body
 }
 .blocpage1
 {
-    padding: 80px;
+    padding: 60px;
     background-color: rgb(252, 213, 245);
     border: 1px solid rgb(238, 183, 231);
     box-shadow: $box-shadow ;
@@ -162,7 +162,9 @@ p
     margin: 10px;
 }
 .note1, .note2{
-    margin: 70px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
     font-weight: bold;
     font-size: 1.5rem;
     display: inline-block;
@@ -190,7 +192,9 @@ p
     transform-origin: bottom left;
 }
 .note3{
-    margin: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
     font-weight: bold;
     font-size: 1.5rem;
     display: inline-block;
@@ -215,6 +219,7 @@ p
     }
 
 .chic1{
+    margin-bottom: 30px;
     font-weight: bold;
     color: indianred;
     font-size: 1.3rem;
@@ -267,6 +272,7 @@ p
     }
 
 .chic3{
+    font-size: 1.3rem;
     color: blue;
     margin: 30px;
     font-weight: bold;
@@ -290,11 +296,14 @@ p
         transform: scaleX(1);
         transform-origin: bottom left;
     }
+  .delice1{
+      margin-bottom: 20px;
+  }  
  .delice2{
      margin: 20px;
  }   
  .delice3{
-     margin: 30px;
+     margin: 20px;
  }
 .delice1,.delice2,.delice3{
         font-weight: bold;
@@ -331,8 +340,12 @@ p
     }
     .gout1{
         margin: 40px;
+        margin-bottom: 10px;
     }
     .gout2{
+        margin: 10px;
+    }
+    .gout3{
         margin: 10px;
     }
     .gout1,.gout2,.gout3{
@@ -478,6 +491,18 @@ a
         {
             display: none;
         } 
-   
+     .footer a {
+         font-size: 1rem;
+     }   
+    .chic1{
+        margin-top: 20px;
+        margin-left: 30px;
+    }   
+    .delice1{
+        margin-left: 20px;
+    }
+    .gout2, .gout3{
+        margin-left: 30px;
+    }
    
 }
