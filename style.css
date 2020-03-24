@@ -5,6 +5,110 @@ body {
   margin: auto;
 }
 
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 100%;
+  max-width: 400px;
+  margin: 15px;
+  padding: 15px;
+  font-size: 3.5em;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.box:hover {
+  transform: scale(1.2);
+  transition: transform 330ms ease-in-out;
+}
+
+.box--1 {
+  color: black;
+  background: #eeb7e7;
+}
+
+.box--2 {
+  background: #f5efe7;
+  background: linear-gradient(brown, blue);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.box--3 {
+  color: blue;
+  background: #d4d4f0;
+}
+
+.box--4 {
+  color: green;
+  background: #f5efe7;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box--5 {
+  text-align: center;
+  margin: auto;
+}
+
+em {
+  color: #eeee09;
+  display: inline-block;
+  text-align: center;
+  color: #eeee09;
+  background: #0e5532;
+  font-size: 2rem;
+  border-radius: 5% 5% 5% 5%;
+  padding: 30px;
+  margin: 30px;
+}
+
+.btn {
+  content: ".";
+  animation: btn 1.2s steps(5, end) infinite;
+}
+
+@keyframes btn {
+  20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: #eeee09;
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 0.25em 0 0 #eeee09, 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0.25em 0 0 #eeee09, 0.5em 0 0 #eeee09;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0e5532;
+  margin-bottom: 20px;
+}
+
+.footer a {
+  color: #eeee09;
+  font-size: 1.8rem;
+  text-decoration: none;
+  margin: 10px;
+}
+.footer a:hover {
+  transform: scale(1.2);
+  transition: transform 330ms ease-in-out;
+}
+
 .blocpage1 {
   padding: 60px;
   background-color: #fcd5f5;
@@ -17,8 +121,6 @@ body {
   padding: 30px;
   background: #fdf3ec;
   border: 1px solid blanchedalmond;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
-  margin-bottom: 30px;
 }
 
 .menu1 {
@@ -52,9 +154,9 @@ body {
 
 .blocpage5 {
   border: 1px solid #d4d4f0;
+  padding: 10px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
   margin-bottom: 30px;
-  padding: 10px;
 }
 
 h1 {
@@ -65,44 +167,6 @@ h1 {
   font-size: 3rem;
   font-weight: bolder;
   padding-top: 20px;
-}
-
-.btn {
-  content: ".";
-  animation: btn 1.2s steps(5, end) infinite;
-}
-
-@keyframes btn {
-  20% {
-    color: rgba(0, 0, 0, 0);
-    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
-  }
-  40% {
-    color: #FFCA28;
-    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
-  }
-  60% {
-    text-shadow: 0.25em 0 0 #FFCA28, 0.5em 0 0 rgba(0, 0, 0, 0);
-  }
-  100% {
-    text-shadow: 0.25em 0 0 #FFCA28, 0.5em 0 0 #FFCA28;
-  }
-}
-.box--5 {
-  text-align: center;
-  margin: auto;
-}
-
-em {
-  color: #eeee09;
-  display: inline-block;
-  text-align: center;
-  color: #eeee09;
-  background: #0e5532;
-  font-size: 2rem;
-  border-radius: 5% 5% 5% 5%;
-  padding: 30px;
-  margin: 30px;
 }
 
 .icon {
@@ -163,13 +227,13 @@ p {
 }
 .note1::before, .note2::before {
   content: "";
+  background: black;
   position: absolute;
   transform: scaleX(0);
   width: 100%;
   bottom: 0;
   left: 0;
   height: 2px;
-  background: black;
   transform-origin: bottom right;
   transition: transform 1000ms ease-in-out;
 }
@@ -195,13 +259,13 @@ p {
 }
 .note3::before {
   content: "";
+  background: black;
   position: absolute;
   transform: scaleX(0);
   width: 100%;
   bottom: 0;
   left: 0;
   height: 2px;
-  background: black;
   transform-origin: bottom right;
   transition: transform 1000ms ease-in-out;
 }
@@ -221,13 +285,13 @@ p {
 }
 .chic1::before {
   content: "";
+  background: indianred;
   position: absolute;
   transform: scaleX(0);
   width: 100%;
   bottom: 0;
   left: 0;
   height: 2px;
-  background: indianred;
   transform-origin: bottom right;
   transition: transform 1000ms ease-in-out;
 }
@@ -247,13 +311,13 @@ p {
 }
 .chic2::before {
   content: "";
+  background: blueviolet;
   position: absolute;
   transform: scaleX(0);
   width: 100%;
   bottom: 0;
   left: 0;
   height: 2px;
-  background: blueviolet;
   transform-origin: bottom right;
   transition: transform 1000ms ease-in-out;
 }
@@ -273,13 +337,13 @@ p {
 }
 .chic3::before {
   content: "";
+  background: blue;
   position: absolute;
   transform: scaleX(0);
   width: 100%;
   bottom: 0;
   left: 0;
   height: 2px;
-  background: blue;
   transform-origin: bottom right;
   transition: transform 1000ms ease-in-out;
 }
@@ -308,13 +372,13 @@ p {
 }
 .delice1::before, .delice2::before, .delice3::before {
   content: "";
+  background: blue;
   position: absolute;
   transform: scaleX(0);
   width: 100%;
   bottom: 0;
   left: 0;
   height: 2px;
-  background: blue;
   transform-origin: bottom right;
   transition: transform 1000ms ease-in-out;
 }
@@ -354,13 +418,13 @@ p {
 }
 .gout1::before, .gout2::before, .gout3::before {
   content: "";
+  background: greenyellow;
   position: absolute;
   transform: scaleX(0);
   width: 100%;
   bottom: 0;
   left: 0;
   height: 2px;
-  background: greenyellow;
   transform-origin: bottom right;
   transition: transform 1000ms ease-in-out;
 }
@@ -391,72 +455,6 @@ p {
 
 .prix {
   margin: 10px;
-}
-
-.container {
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 1000px;
-  margin: auto;
-  flex-wrap: wrap;
-}
-
-.box {
-  width: 100%;
-  max-width: 400px;
-  margin: 15px;
-  padding: 15px;
-  font-size: 3.5em;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
-  text-align: center;
-}
-.box:hover {
-  transform: scale(1.2);
-  transition: transform 330ms ease-in-out;
-}
-
-.box--1 {
-  color: black;
-  background: #eeb7e7;
-}
-
-.box--2 {
-  background: #f5efe7;
-  background: linear-gradient(brown, blue);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
-.box--3 {
-  color: blue;
-  background: #d4d4f0;
-}
-
-.box--4 {
-  color: green;
-  background: #f5efe7;
-}
-
-a {
-  text-decoration: none;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  background-color: #0e5532;
-  margin-bottom: 20px;
-}
-
-.footer a {
-  color: #eeee09;
-  font-size: 1.8rem;
-  text-decoration: none;
-  margin: 10px;
-}
-.footer a:hover {
-  transform: scale(1.2);
-  transition: transform 330ms ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
