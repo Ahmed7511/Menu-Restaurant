@@ -65,7 +65,6 @@ body
     text-align: center;
     background:  rgb(245, 239, 231);
     & a{
-            transition: transform 0.4s ease-in-out 0s;
         background: -webkit-linear-gradient(0deg, #cc6410 0% 30%, #a45be9, blue);
         -webkit-text-fill-color : transparent;
         -webkit-background-clip: text;
@@ -140,16 +139,17 @@ footer a
     text-decoration: none;
     margin: 10px;
     &:hover{
-    animation: wiggle 1s infinite;
+    animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    animation-iteration-count: infinite;
+    transform:translate3d(0, 0, 0);
     }
 }
-@keyframes wiggle {
-    2%{transform: rotate(0deg); }
-    4%{transform: rotate(2deg);}
-    6%{transform: rotate(-2deg);}
-    8%{transform: rotate(3deg);}
-    10%{transform: rotate(-3deg);}
-    100%{transform: rotate(0deg);}
+
+@keyframes shake {
+    10%, 90% { transform: translate(-1px,0);}    
+    20%, 80% { transform: translate(2px, 0);}
+    50%, 70% {transform: translate(-4px, 0);}
+    40%, 60% {transform: translate(4px, 0);}
 }
 .blocpage1
 {
@@ -253,7 +253,8 @@ h6
 }
 p
 {
-    margin-left: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .note1, .note2{
     text-align: center;
@@ -434,6 +435,7 @@ article
         } 
         .chic1 , .chic2, .chic3, .delice1, .delice2, .delice3,.gout1, .gout2, .gout3{
             font-size: 1rem;
+            margin-bottom: 10px;
         }
         img{
             display: none;
@@ -448,6 +450,7 @@ article
     .text{
            width: 100%;
           text-align: center;
+          margin: 0px;
          }
     .prix{
           text-align: center;
