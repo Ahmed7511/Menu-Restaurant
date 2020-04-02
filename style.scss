@@ -66,8 +66,9 @@ body
     background:  rgb(245, 239, 231);
     & a{
         background: -webkit-linear-gradient(0deg, #cc6410 0% 30%, #a45be9, blue);
-        -webkit-text-fill-color : transparent;
-        -webkit-background-clip: text;
+                   -webkit-text-fill-color : transparent;
+                   -webkit-background-clip: text;
+                   
     }
 }
 
