@@ -1,10 +1,10 @@
-$color-primary: rgb(14, 85, 50) ;
+$color-primary: rgb(79, 156, 133) ;
 $color-titre : rgb(238, 238, 9) ;
 $color-box1 : rgb(238, 183, 231) ;
 $width :100px;
 $box-shadow:5px 5px 5px 5px rgb(0 ,0 ,0 ,0.3);
-$color-box3: rgb(212, 212, 240);
-$color-box4: rgb(245, 239, 231);
+$color-box3: rgb(228, 228, 250);
+$color-box4: #fff;
 @mixin page {
     box-shadow: $box-shadow;
     margin-bottom: 30px;
@@ -33,6 +33,9 @@ body
     max-width: 1000px;
     margin: auto;
     flex-wrap: wrap;
+}
+strong{
+    font-size: 2rem;
 }
 .box{
     width: 100%;
