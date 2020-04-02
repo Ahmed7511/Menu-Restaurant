@@ -158,7 +158,7 @@ footer a
 .blocpage1
 {
     padding: 60px;
-    background-color: rgb(252, 213, 245);
+    background-color: rgb(248, 221, 241);
     border: 1px solid rgb(238, 183, 231);
     @include page;
 }
@@ -166,9 +166,10 @@ footer a
 .blocpage2
 {
     padding: 30px;
-    background: rgb(253, 243, 236);
+    background: rgb(252, 247, 244);
     border: 1px solid blanchedalmond;
-    
+    @include page 
+        
 }
 
 .menu1

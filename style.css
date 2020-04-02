@@ -150,7 +150,7 @@ footer a:hover {
 }
 .blocpage1 {
   padding: 60px;
-  background-color: #fcd5f5;
+  background-color: #f8ddf1;
   border: 1px solid #eeb7e7;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
   margin-bottom: 30px;
@@ -158,8 +158,10 @@ footer a:hover {
 
 .blocpage2 {
   padding: 30px;
-  background: #fdf3ec;
+  background: #fcf7f4;
   border: 1px solid blanchedalmond;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
 }
 
 .menu1 {
